@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>An introspective view on the FLOS/CH community</title>
+
+		<link rel="stylesheet" href="./reveal-js/reset.css">
+		<link rel="stylesheet" href="./reveal-js/reveal.css">
+		<link rel="stylesheet" href="./reveal-js/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="./reveal-js/plugin/highlight/atom-one-dark.min.css" id="highlight-theme">
+
+		<script src="./data/publications.js"></script>
+		<script src="./data/applications.js"></script>
+		<script src="./data/webgis.js"></script>
+		<script src="./js/functions.js"></script>
+
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+				<section data-markdown>
+					# AF 2006-2020
+
+					### An incomplete introspective view on the FLOS/CH community
+
+					---
+
+					- Julian Bogdani <[julian.bogdani@uniroma1.it](mailto:julian.bogdani@uniroma1.it)>
+					- Federico Sciacca <[fede__fs@libero.it](mailto:fede__fs@libero.it)>
+
+					---
+
+					Play online: https://jbogdani.github.io/af-introspection/
+				</section>
+
+				<section data-markdown>
+						# Aim
+
+						This brief presentation is aimed at providing a rapid overview on
+						applications and projects presented in the previous editions of
+						ArcheoFOSS from a statistical point of view.
+
+						The goal is to provide a snapshot of the FLOS’ community
+						activity as it appears in 2020, with no prentention of
+						perfection or completeness. This is why the source of
+						charts and tables is made publically available,
+						so anyone can complete the dataset or suggest corrections.
+				</section>
+
+				<section>
+					<section data-markdown>
+						# Data
+
+						The information presented in the next slides has been extraced
+						from the **official pubblications**. Conferences that have not
+						been published (2016 and 2019) have not been considered.
+
+						When the pubblication will appear, hopefully, if this application
+						is still maintained, it will be updated.
+					</section>
+
+					<section data-markdown>
+						### Methodology
+
+						For each project, the following data have been extracted from the text:
+
+						- `year`	: Year of the conference where the appplication has been presented
+						- `authors`	: Authors of the presentation
+						- `name`	: Name of the project
+						- `license`	: License as stated in the source; `false` if no information on license is found
+					</section>
+
+					<section data-markdown>
+						### Methodology #2
+
+						By combining texts with web research the following information have been recovered
+						- `maintained`: `true` if the project is still maintained, otherwise `false`
+						- `source_available`: URL o the repository where the sourse is available, otherwise `false`
+						- `last_commit`: Year of the last commit to the repository
+						- `commits`	: Total number of commits as reported in the official repository
+					</section>
+
+					<section data-markdown>
+						### Warning
+
+						The Web search is not a very reliable source of information
+						since projects living in the dark web might not appear.
+
+						Yet, we beleive that projects targeting an open community
+						might not have walked many steps towards invisibility.
+
+						Please feel free [to report](https://github.com/jbogdani/af-introspection/issues)
+						wrong or incomplete information.
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>List of available pubblications up to october 2020</h3>
+						<script> publicationsTable() </script>
+					</section>
+					<section>
+						<h3>Publishing time</h3>
+						<small>Years passed from the conference session to the publication of the proceedings</small>
+						<script> publicationsChart(publications) </script>
+					</section>
+					<section>
+						<h3>Publishing license</h3>
+						<script> publicationsLicenseChart() </script>
+						<small>Please note that the chart refers to the pubblication licence. <br>
+						Access policy is not considered here.</small>
+					</section>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+					# Part 1
+
+					Software and applications
+					</textarea>
+				</section>
+
+
+				<section> <!-- 1.1  -->
+					<section>
+						<h2>1.1. Openness</h2>
+					</section>
+					<section>
+						<h3>Source code availabililty</h3>
+						<script> countSourceAvailability() </script>
+					</section>
+					<section>
+						<h3>Applications with public source</h3>
+						<script> sourceAvailableTable() </script>
+					</section>
+					<section>
+						<h3>Applications with no public source</h3>
+						<script> sourceNotAvailableTable(1) </script>
+						<small>Page 1/2</small>
+					</section>
+					<section>
+						<h3>Applications with no public source</h3>
+						<script> sourceNotAvailableTable(2) </script>
+						<small>Page 2/2</small>
+					</section>
+					<section>
+						<h3>License type</h3>
+						<script> licenseType() </script>
+					</section>
+					<section>
+						<h3>License type | detail</h3>
+						<script> licenseTypeTable() </script>
+					</section>
+
+				</section><!-- End of 1.1  -->
+
+				<section> <!-- 1.2  -->
+					<section>
+						<h2>1.2. Lifecicle</h2>
+					</section>
+					<section>
+						<h3>Survival rate</h3>
+						<script> countSurvived() </script>
+					</section>
+					<section>
+						<h3>Longevity</h3>
+						<script> longevity() </script>
+						Years passed from the presentation to the last commit
+					</section>
+					<section>
+						<h3>Longevity | detail</h3>
+						<script> longevityTable() </script>
+					</section>
+					<section>
+						<h3>Development intensity</h3>
+						<script> devIntensity() </script>
+						<p>*GRASS excluded (+20k commits)</p>
+					</section>
+					<section>
+						<h3>Development intensity | detail</h3>
+						<script> devIntensityTable() </script>
+					</section>
+
+				</section><!-- End of 1.2  -->
+
+
+				<section>
+					<section data-markdown>
+						## Part 2
+
+						webGIS and Data portals
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals avaibility in 2020</h3>
+						<script> countGisAvailability() </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals access policy</h3>
+						<script> countGisAccess() </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals # 1/7</h3>
+						<script> countGisTable(1) </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals # 2/7</h3>
+						<script> countGisTable(2) </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals # 3/7</h3>
+						<script> countGisTable(3) </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals # 4/7</h3>
+						<script> countGisTable(4) </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals # 5/7</h3>
+						<script> countGisTable(5) </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals # 6/7</h3>
+						<script> countGisTable(6) </script>
+					</section>
+
+					<section>
+						<h3>webGIS and Data portals # 7/7</h3>
+						<script> countGisTable(7) </script>
+					</section>
+
+				</section>
+
+
+
+				<section data-markdown>
+					<textarea data-template>
+						# Contribute
+
+						Please, feel free to actively contribute in correcting
+						wrong information, by opening
+						[an issue](https://github.com/jbogdani/af-introspection/issues)
+						or by forwarding a pull-request.
+
+						Data and application are hosted on Github
+						[https://github.com/jbogdani/af-introspection](https://github.com/jbogdani/af-introspection)
+					  </textarea>
+				</section>
+
+				<section data-markdown>
+					# Thank you
+
+					© Julian Bogdani & Federico Sciacca 2020
+
+					Data and texts are licensed under
+
+					[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+
+					<img style="height:50px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" />
+					<img style="height:50px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" />
+					<img style="height:50px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" /></a></p>
+				</section>
+			</div>
+		</div>
+
+		<script src="./reveal-js/reveal.js"></script>
+		<script src="./reveal-js/plugin/markdown/markdown.js"></script>
+		<script src="./reveal-js/plugin/highlight/highlight.js"></script>
+		<script src="./reveal-js/plugin/chart/Chart.min.js"></script>
+		<script src="./reveal-js/plugin/chart/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				autoSlide: 7000,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealChart ],
+				chart: {
+					defaults: {
+						global: {
+							title: { fontColor: "#FFF" },
+							legend: {
+								position: "bottom",
+								labels: { fontColor: "#FFF" },
+							},
+							tooltips: {
+								labels: { fontColor: "#FFF" },
+							},
+						},
+						scale: {
+							scaleLabel: { fontColor: "#FFF" },
+							gridLines: { color: "#FFF", zeroLineColor: "#FFF" },
+							ticks: { fontColor: "#FFF" },
+						}
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
