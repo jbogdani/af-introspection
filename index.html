@@ -25,7 +25,7 @@
 			<div class="slides">
 
 
-				<section data-markdown>
+				<section data-markdown data-autoslide="5000">
 					# AF 2006-2020
 
 					### An incomplete introspective view on the FLOS/CH community
@@ -40,7 +40,7 @@
 					Play online: https://jbogdani.github.io/af-introspection/
 				</section>
 
-				<section data-markdown>
+				<section data-markdown  data-autoslide="15000">
 						# Aim
 
 						This brief presentation is aimed at providing a rapid overview on
@@ -55,7 +55,7 @@
 				</section>
 
 				<section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="10000">
 						# Data
 
 						The information presented in the next slides has been extraced
@@ -66,18 +66,18 @@
 						is still maintained, it will be updated.
 					</section>
 
-					<section data-markdown>
+					<section data-markdown data-autoslide="13000">
 						### Methodology
 
 						For each project, the following data have been extracted from the text:
 
-						- `year`	: Year of the conference where the appplication has been presented
+						- `year`	: Year of the conference where the application has been presented
 						- `authors`	: Authors of the presentation
 						- `name`	: Name of the project
 						- `license`	: License as stated in the source; `false` if no information on license is found
 					</section>
 
-					<section data-markdown>
+					<section data-markdown data-autoslide="13000">
 						### Methodology #2
 
 						By combining texts with web research the following information have been recovered
@@ -87,7 +87,7 @@
 						- `commits`	: Total number of commits as reported in the official repository
 					</section>
 
-					<section data-markdown>
+					<section data-markdown data-autoslide="12000">
 						### Warning
 
 						The Web search is not a very reliable source of information
@@ -102,7 +102,7 @@
 				</section>
 
 				<section>
-					<section>
+					<section data-autoslide="15000">
 						<h3>List of available pubblications up to october 2020</h3>
 						<script> publicationsTable() </script>
 					</section>
@@ -119,7 +119,7 @@
 					</section>
 				</section>
 
-				<section data-markdown>
+				<section data-markdown data-autoslide="4000">
 					<textarea data-template>
 					# Part 1
 
@@ -129,32 +129,32 @@
 
 
 				<section> <!-- 1.1  -->
-					<section>
+					<section data-autoslide="4000">
 						<h2>1.1. Openness</h2>
 					</section>
 					<section>
 						<h3>Source code availabililty</h3>
 						<script> countSourceAvailability() </script>
 					</section>
-					<section>
-						<h3>Applications with public source</h3>
+					<section data-autoslide="10000">
+						<h3>Applications with published source code</h3>
 						<script> sourceAvailableTable() </script>
 					</section>
-					<section>
-						<h3>Applications with no public source</h3>
+					<section data-autoslide="10000">
+						<h3>Applications with source code not available</h3>
 						<script> sourceNotAvailableTable(1) </script>
 						<small>Page 1/2</small>
 					</section>
-					<section>
-						<h3>Applications with no public source</h3>
+					<section data-autoslide="10000">
+						<h3>Applications with source code not available</h3>
 						<script> sourceNotAvailableTable(2) </script>
 						<small>Page 2/2</small>
 					</section>
-					<section>
+					<section data-autoslide="10000">
 						<h3>License type</h3>
 						<script> licenseType() </script>
 					</section>
-					<section>
+					<section data-autoslide="10000">
 						<h3>License type | detail</h3>
 						<script> licenseTypeTable() </script>
 					</section>
@@ -162,7 +162,7 @@
 				</section><!-- End of 1.1  -->
 
 				<section> <!-- 1.2  -->
-					<section>
+					<section data-autoslide="4000">
 						<h2>1.2. Lifecicle</h2>
 					</section>
 					<section>
@@ -174,7 +174,7 @@
 						<script> longevity() </script>
 						Years passed from the presentation to the last commit
 					</section>
-					<section>
+					<section data-autoslide="10000">
 						<h3>Longevity | detail</h3>
 						<script> longevityTable() </script>
 					</section>
@@ -183,7 +183,7 @@
 						<script> devIntensity() </script>
 						<p>*GRASS excluded (+20k commits)</p>
 					</section>
-					<section>
+					<section data-autoslide="10000">
 						<h3>Development intensity | detail</h3>
 						<script> devIntensityTable() </script>
 					</section>
@@ -192,7 +192,7 @@
 
 
 				<section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="4000">
 						## Part 2
 
 						webGIS and Data portals
@@ -288,7 +288,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-				autoSlide: 7000,
+				// autoSlide: 7000,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealChart ],
