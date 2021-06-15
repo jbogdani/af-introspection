@@ -1,4 +1,4 @@
-# AF 2006-2020. An incomplete Introspective view on the FLOS/CH community
+# AF 2006-2020. An incomplete introspective view on the FLOS/CH community
 
 Authors: Julian **Bogdani**, Federico **Sciacca**
 
