@@ -29,7 +29,7 @@ const applications = [
         "name": "GRASS",
         "use": "Utilizzo in ambito archeologico",
         "notes": "Ancora in vita e largamente utilizzato. Ultima versione 7.8.3 del 2020. Pagina del progetto https://grass.osgeo.org/. Repository git https://github.com/OSGeo/grass/",
-        "license": false,
+        "license": "GNU GPL 2+",
         "maintained": true,
         "source_available": 'https://github.com/OSGeo/grass',
         "last_commit": 2020,
