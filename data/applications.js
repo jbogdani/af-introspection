@@ -323,7 +323,7 @@ const applications = [
         "use": "Modalità semplice che garantisce la portabilità per i dati stratigrafici. Insieme di tabelle CSV e di un file json",
         "notes": "Codice ancora rintracciabile https://codeberg.org/steko/harris-matrix-data-package",
         "license": "GNU GPL3",
-        "maintained": false,
+        "maintained": true,
         "source_available": "https://codeberg.org/steko/harris-matrix-data-package",
         "last_commit": 2020,
         "commits": 23
