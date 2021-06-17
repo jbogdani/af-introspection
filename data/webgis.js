@@ -272,7 +272,7 @@ const webgis = [
     {
        "year": 2014,
        "authors": "Valentina Vassallo, Niki Kyriacou, Sorin Hermon, Ioannis Eliades",
-       "name": "Draft webGIS of Cipro",
+       "name": "Draft webGIS of Cyprus",
        "description": "webGIS per Cipro. Progetto presentato come in fase di sviluppo",
        "url": "",
        "available": false, // true || false
