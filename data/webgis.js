@@ -245,7 +245,7 @@ const webgis = [
     {
        "year": 2014,
        "authors": "Francesca Brunet, Alberto Cosner, Giuseppe Naponiello",
-       "name": "Le fonti per la storia: webGIS of the Primiero and Vanoi vlleys (Trento)",
+       "name": "Le fonti per la storia: webGIS of the Primiero and Vanoi valleys (Trento)",
        "description": "webGIS storico per la zona delle valli di Primiero e Vanoi (TN)",
        "url": "",
        "available": false, // true || false
