@@ -283,7 +283,7 @@ const webgis = [
        "authors": "Julian Bogdani",
        "name": "Ghazni: an open access digital archive of the Italian Archaeologial Mission in Ghazni, Afghanistan, backed by a BraDypUS database",
        "description": "Archivio digitale multidisciplinare per la gestione del patrimonio culturale di Ghazni (Afghanistan). Utilizzo del sistema BraDypUS per la banca dati",
-       "url": "https://ghazni.bradypus.net",
+       "url": "https://ghazni.bdus.cloud",
        "available": true,
        "access": "open"
     },

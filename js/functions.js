@@ -26,6 +26,7 @@ const colors = [
 ];
 
 const makeChart = (type, labels, data, colors) => {
+    // let csv = ''; labels.forEach( (l, i) => { csv += `${l}\t${data[i]}\n`; }); console.log(csv);
     const html = `<canvas data-chart="${type}">
     <!--
     {
