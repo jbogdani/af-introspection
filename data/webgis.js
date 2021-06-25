@@ -109,7 +109,7 @@ const webgis = [
     },
     {
        "year": "2011, 2012, 2014, 2018",
-       "authors": "Mirella Serlorenzi, Andrea De Tommasi, Simone Ruggeri",
+       "authors": "Mirella Serlorenzi, Andrea De Tommasi, Simone Ruggeri, Raniero Grassucci, Andrea Vismara, Gianluca De Rosa, Arjuna Cecchetti, Federica Lamonaca, Fabio Zonetti",
        "name": "SITAR. WebGIS for Rome",
        "description": "Approccio e filosofia del Sistema Informativo Territoriale Archeologico di Roma",
        "url": "",
@@ -142,6 +142,15 @@ const webgis = [
        "url": "http://www.mappaproject.org/",
        "available": true, // true || false
        "access": "open", // open, free login, upon approval, false
+    },
+    {
+       "year": 2012,
+       "authors": "Dario Berardi, Andrea Ciapetti, Maria De Vizia Guerriero, Alessandra Donnini, Matteo Lorenzini, Maria Emilia Masci, Davide Merlitti, Stefano Norcia, Fabio Piro, Oreste Signore",
+       "name": "baseculturale.it",
+       "description": "Portale semantico per i Beni Culturali",
+       "url": "http://baseculturale.it",
+       "available": false, // true || false
+       "access": false, // open, free login, upon approval, false
     },
     {
        "year": 2013,
@@ -181,7 +190,7 @@ const webgis = [
     },
     {
        "year": "2013, 2014",
-       "authors": "Brunella Bruno, Patrizia Basso, Piergiovanni Grossi, Alberto Belussi, Sara Migliorini",
+       "authors": "Brunella Bruno, Patrizia Basso, Piergiovanni Grossi, Alberto Belussi, Sara Migliorini, Giuliana Cavalieri Manasse",
        "name": "SITAVr: webGIS of Verona",
        "description": "Sistema informativo archeologico di Verona",
        "url": "https://sitavr.scienze.univr.it/",

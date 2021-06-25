@@ -1,7 +1,7 @@
 const applications = [
     {
         "year": 2006,
-        "authors": "Alessandro Bezzi, Luca Bezzi, Denis Francisci, Rupert Gietl",
+        "authors": "Alessandro Bezzi, Luca Bezzi, Denis Francisci, Rupert Gietl, Fabrizio Furnari",
         "name": "ArcheOS",
         "use": "Sistema operativo basato su LINUX sviluppato appositamente per archeologi, nuova release 1.1.6 Akhenaton. Diversi software implementati",
         "notes": "https://www.archeos.eu/category/archeos/: portale del sistema operativo. Utilizzo scarso, citato solo in pochi forum. Repository: https://github.com/archeos ultima modifica febbraio 2016. Poi documentazione spostata qui http://vai.uibk.ac.at/dadp/doku.php.  Attualmente SO non più sviluppato (ultima versione: 4)",
@@ -155,7 +155,7 @@ const applications = [
     },
     {
         "year": 2009,
-        "authors": "Luca Mandolesi",
+        "authors": "Luca Mandolesi, Enzo Cocca",
         "name": "pyArchInit",
         "use": "sfruttabile sia come applicazione standalone per l’inserimento delle schede di Unità Stratigrafica, sia come plug-in per QGIS",
         "notes": "Progetto ancora in vita, in continuo sviluppo. Docs: https://pyarchinit.github.io/, portale https://sites.google.com/site/pyarchinit/. Repository: https://github.com/pyarchinit/pyarchinit",
