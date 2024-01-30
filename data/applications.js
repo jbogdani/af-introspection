@@ -314,7 +314,7 @@ const applications = [
     {
         "year": 2014,
         "authors": "Matteo Frassine, Giuseppe Naponiello, Stefania De Francesco, Alessandro Asta",
-        "name": "Raptor",
+        "name": "RAPTOR",
         "use": "Geodatabase per l'archeologia preventiva. È stato creato un software che, seppur basato su un geodatabase decisamente articolato (PostgreSQL e PostGIS), permette all’utente un’interazione semplice grazie ad un’interfaccia web user friendly",
         "notes": "Progetto ancora in vita, portale online all'indirizzo https://www.raptor.beniculturali.it. Sorgente chiusa",
         "license": "Commercial",
